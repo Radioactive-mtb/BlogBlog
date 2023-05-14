@@ -1,0 +1,14 @@
+<div class="card mb-4">
+  <div class="card-header">
+    <h4 class="card-title">{{title}}</h4>
+    <small class="text-muted">Posted by {{user.username}} on {{format_date createdAt }}</small>
+  </div>
+  <div class="card-body">
+    <p class="card-text">{{post_content}}</p>
+  </div>
+  <div class="card-footer">
+    <a href="/posts/{{id}}">View Comments ({{comments.length}})</a>
+  </div>
+</div>
+
+<script src="/public/dash.js"></script>
