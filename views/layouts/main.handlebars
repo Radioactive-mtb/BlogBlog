@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Most Okay Blog</title>
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/styles.css">
 </head>
 
 <body>
@@ -13,7 +13,9 @@
     <header class="display-flex justify-space-between align-center p-2">
       <nav>
         {{#if logged_in}}
-        <a href="/profile">profile</a> |
+        <a href="/dash">Profile</a> 
+        <a href="/">Home</a>
+        |
         <button class="no-button" id="logout">logout</button>
         {{else}}
         <a href="/login">login</a>
@@ -29,7 +31,7 @@
   </div>
 
   {{#if logged_in}}
-  <script src="/js/logout.js"></script>
+  <script src="/logout.js"></script>
   {{/if}}
 </body>
 
